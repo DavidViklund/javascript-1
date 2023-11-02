@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <b>Functions</b><br><br>
+    <b>Task 1</b><br>
+    <p id="demo"></p>
+  
+    <b>Task 2</b><br>
+    <p id="demo2"></p>
+
+    <b>Task 3</b><br>
+    <p id="greeting"></p>
+
+
+    <b>Task 4</b><br>
+    <p id="result1"></p>
+    <p id="result2"></p>
+   
+    <b>Task 5</b><br>
+    <p id="sport"></p>
+
+    <script>
+
+//Task1
+        const currentTime = new Date();
+        const timeString = currentTime.toLocaleTimeString()
+        document.getElementById("demo").innerHTML = currentTime;
+        console.log(currentTime);
+//Task2 
+function printMyName()   {
+  const name = "David Viklund";
+        console.log(name);
+
+     const demo2Element =
+      document.getElementById("demo2");
+      demo2Element.innerHTML += name + "<br>";
+    }
+      printMyName();
+      printMyName();
+     
+//Task3
+      function printGreeting(name)   {
+        console.log(name);
+        const greetingElement =
+        document.getElementById("greeting");
+        greetingElement.innerHTML += "Hello " + name  + "<br>";
+
+        }
+          printGreeting("Bob");
+          printGreeting("Sue");
+
+//Task4
+function multiply(a,b){
+  const result = a * b;
+  return result;
+}
+
+const first = multiply(2, 2);
+const second = multiply(100, 4);
+
+document.getElementById("result1").innerHTML = first;
+
+document.getElementById("result2").innerHTML = second;
+console.log(first);
+console.log(second);
+
+// Task 5
+function warmEnough(currentTemperature) {
+  return currentTemperature > 10;
+}
+
+if (warmEnough(15)) {
+  const sportElement = document.getElementById("sport");
+  sportElement.innerHTML = "Go for a run!";
+    console.log("Go for a run!")
+}
+    </script>
+    
+
+
+  </body>
+      </html>
+
+     
+    </script>
+
+    <p>Open the console in the browser to see the output of this script.</p>
+  </body>
+</html>

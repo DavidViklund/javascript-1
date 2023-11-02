@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booleans</title>
+  </head>
+  <body>
+    <p><b>Booleans</b><br /><br /></p>
+    <p><b>Task1</b></p>
+    <p id="result1">Printing the results here</p>
+    <p><b>Task2</b></p>
+    <p id="result2">Printing the results here</p>
+    <p><b>Task3</b></p>
+    <p id="result3">Printing the results here</p>
+  </body>
+</html>
+<script>
+  //Task 1
+  const wordCount = 0;
+  if (wordCount === 0) {
+    const result1Element = document.getElementById("result1");
+    result1Element.textContent = "Get Writing!";
+  }
+  console.log(result1);
+//Task 2
+  const currentTemperature = 15;
+  const goneForARun = false;
+  if (currentTemperature > 10 && !goneForARun) {
+    const result2Element = document.getElementById("result2");
+    result2Element.textContent = "Go for a run!";
+  }
+  console.log(result2);
+//Task 3
+  const name = "DavidViklund";
+  const result3Element = document.getElementById("result3");
+
+  if (name.length > 10) {
+    result3Element.textContent = "You have a long name!";
+  } else if (name.length < 5) {
+    result3Element.textContent = "You have a short name!";
+  } else {
+    result3Element.textContent = "You have a medium length name!";
+  }
+  console.log(result3);
+</script>
+
+<p>Open the console in the browser to see the output of this script.</p>
+</body>
+</html>

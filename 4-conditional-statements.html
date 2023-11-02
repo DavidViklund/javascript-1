@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional statement</title>
+  </head>
+  <body>
+    <b>Conditional statement</b><br /><br />
+    <b>Task 1</b><br />
+
+    <p id="demo">Carry on</p>
+    <script>
+      const carSpeed = 85;
+      let greeting;
+      if (carSpeed >= 100) {
+        greeting = "Slow down!";
+      } else {
+        greeting = "Carry on";
+      }
+      document.getElementById("demo").innerHTML = greeting;
+      console.log(greeting);
+    </script>
+
+    <p>Open the console in the browser to see the output of this script.</p>
+  </body>
+</html>

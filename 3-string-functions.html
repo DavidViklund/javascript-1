@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String & functions</title>
+  </head>
+  <body>
+    <b>String and functions</b><br /><br />
+    <b>Task 1</b><br />
+    <p id="demo"></p>
+    <b>Task 2</b><br />
+    <p id="demo2"></p>
+    <b>Task 3</b><br />
+    <p>"How many characters long is this string?"</p>
+    <p>This string has<p id="demo3"><p><p>characters</p>
+  </body>
+    <script>
+      //Task 1
+      const name = "David";
+      const uppercase = name.toUpperCase();
+      document.getElementById("demo").innerHTML = uppercase;
+      console.log(uppercase);
+      //Task 2
+      const string = "    Remove whitespace   ";
+      document.getElementById("demo2").innerHTML = string;
+      console.log(string);
+      //Task 3
+      var string2 = "How many characters long is this string?";
+      var len = string2.length;
+      document.getElementById("demo3").innerHTML = len;
+      console.log(len);
+
+    </script>
+    <p>Open the console in the browser to see the output of this script.</p>
+  </body>
+</html>
